@@ -344,6 +344,70 @@ Third color - LIGHT GRAY:    #E5E5E5
         }
     }
 
+
+/*  === OFFERS === */
+    #offers-section {
+        background-color: #DAF4D8;
+    }
+
+    .offers-box {
+        text-align: center;
+        width: 80%;
+    }
+
+    .offers-box h1 {
+        font-size: 1.4rem;
+    }
+
+    #offers-section .row:nth-of-type(2) > .col-2:first-of-type > .offers-box {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    #offers-section .row:nth-of-type(2) > .col-2:nth-of-type(2) > .offers-box {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #offers-section .row:nth-of-type(2) > .col-2:last-of-type > .offers-box {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .offers-icon {
+        width: 120px;
+        height: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+    }
+
+    #prices-icon{
+        background: #2C6626 url(../img/offers-sprite.png) left 0 top 0;
+    }
+
+    #delivery-icon {
+        background: #2C6626 url(../img/offers-sprite.png) left -120px top 0;
+    }
+
+    #designe-icon {
+        background: #2C6626 url(../img/offers-sprite.png) left -240px top 0;
+    }
+
+    @media (max-width: 768px) {
+        #offers-section .row:nth-of-type(2) > .col-2 > .offers-box {
+            margin-right: auto !important;
+            margin-left: auto !important;
+        } 
+    }
+
+    @media (max-width: 480px) {
+        .offers-box {
+            width: 100%;
+        }
+    }
+
+
 /*  === GRID-SYSTEM === */
 
     .container {
