@@ -420,6 +420,60 @@ Third color - LIGHT GRAY:    #E5E5E5
         margin-right: auto;
     }
 
+/*  === FOOTER === */
+    
+    #footer-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+
+    #footer-text {
+        position: relative;
+        top: 50px;
+        left: 0;
+    }
+
+    #footer-text div {
+        margin-bottom: 1rem;
+    }
+
+    #footer-text p {
+        margin: .2rem;
+        font-size: 1rem;
+    }
+
+    #footer-text div:first-of-type > p:first-of-type {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #2C6626;
+    }
+
+    #footer-text a:link {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    #footer-text a:visited {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    #footer-text a:active {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    #footer-text a:hover {
+        text-decoration: underline;
+        color: #2C6626;
+        font-weight: bold;
+    }
+
 /*  === GRID-SYSTEM === */
 
     .container {
