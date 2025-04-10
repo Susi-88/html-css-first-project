@@ -587,6 +587,61 @@ Third color - LIGHT GRAY:    #E5E5E5
         }
     }
 
+/*  === CONTACT HTML === */
+
+    #contact-form {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4rem;
+
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        width: 100%;
+        border: 2px solid #083204;
+        border-radius: 4px;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        color: #083204;
+    }
+
+    #contact-form input:hover,
+    #contact-form textarea:hover,
+    #contact-form input:focus,
+    #contact-form textarea:focus {
+        background-color: #DAF4D8;
+        color: #083204;
+    }
+
+    #contact-form textarea {
+        height: 150px;
+    }
+
+    #contact-submit-btn {
+        width: 150px;
+        height: 40px;
+    }
+
+    #contact-submit-btn:hover {
+        color: #083204;
+        border: 2px solid #083204;
+    }
+
+    @media (max-width: 1366px) {
+        #contact-form {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #contact-submit-btn {
+            width: 100%;
+        }
+    }
+
+
 /*  === GRID-SYSTEM === */
 
     .container {
