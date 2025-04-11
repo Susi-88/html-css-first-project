@@ -30,10 +30,6 @@ Third color - LIGHT GRAY:    #E5E5E5
         outline: 3px solid #3D3F45;
     }
 
-    main > section:nth-of-type(even) {
-        background-color: #DAF4D8;
-    }
-
     section {
         padding-top: 4rem;
         padding-bottom: 4rem;
@@ -281,6 +277,40 @@ Third color - LIGHT GRAY:    #E5E5E5
         }
     }
 
+/*  === ANIMATED LOGO === */
+
+    @keyframes logoAnimation {
+        0%           {transform: rotateZ(0deg);}
+        11.111%      {transform: rotateZ(0deg);}
+
+        22.222%      {transform: rotateZ(90deg);}
+        33.333%      {transform: rotateZ(90deg);}
+
+        44.444%      {transform: rotateZ(180deg);}
+        55.555%      {transform: rotateZ(180deg);}
+
+        66.666%      {transform: rotateZ(270deg);}
+        77.777%      {transform: rotateZ(270deg);}
+
+        88.888%      {transform: rotateZ(360deg);}
+        100%         {transform: rotateZ(360deg);}
+
+    }
+
+    #animated-logo {
+        height: 150px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        animation: logoAnimation 5s ease-in-out infinite alternate;
+    }
+
+    #animated-logo > img {
+        height: 100%;
+        width: auto;
+    }
+
 /*  === SERVICES === */
 
     .services-box {
@@ -290,6 +320,10 @@ Third color - LIGHT GRAY:    #E5E5E5
         padding: 1rem 3rem 2.5rem;
         width: 75%;
         margin-bottom: 1.8rem;
+    }
+
+    #services-section .intro-container h1 {
+        margin-top: 0;
     }
 
     #services-section .row > .col-3:nth-of-type(even) > .services-box {
@@ -447,7 +481,7 @@ Third color - LIGHT GRAY:    #E5E5E5
         margin: .2rem;
     }
 
-    #footer-text div:first-of-type > p:first-of-type {
+    #footer-text p:first-of-type {
         font-weight: bold;
         color: #083204;
     }
@@ -474,197 +508,6 @@ Third color - LIGHT GRAY:    #E5E5E5
         text-decoration: underline;
         color: #083204;
         font-weight: bold;
-    }
-
-/*  === SERVICES HTML === */
-
-    .flex-container {
-        display: flex;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .flex-container > .intro-container {
-        width: 100%;
-        margin-bottom: 3rem;
-    }
-
-    .services-card {
-        background-color: #2C6626;
-        color: white;
-        flex-basis: 30%;
-        padding: 2rem;
-        text-align: center;
-        min-height: 500px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .services-card h1 {
-        margin-top: 1rem;
-        margin-bottom: .5rem;
-    }
-
-    .services-card ul {
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-        padding: 0;
-        text-align: left;
-    }
-
-    .services-card ul li {
-        list-style-position: inside;
-        margin-bottom: .2rem;
-    }
-
-    .services-card-highlighted {
-        flex-basis: 33%;
-        min-height: 650px;
-        box-shadow: 0 0 20px 0 #083204;
-    }
-
-    .btn-services-select {
-        width: 60%;
-        padding: .6rem;
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    @media (max-width: 1366px) {
-        .flex-container {
-            width: 90%;
-        }
-    }
-
-    @media (max-width: 1024px) {
-        .flex-container {justify-content: space-around;}
-
-        .flex-container > .intro-container {
-            margin-right: 1rem;
-            margin-left: 1rem;
-        }
-    }
-
-    @media (max-width: 950px) {
-        .services-card {
-            padding-right: 1rem;
-            padding-left: 1rem;
-        }
-
-        .flex-container {align-items: stretch;}
-
-        .services-card {min-height: initial;}
-
-        .services-card ul {
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .services-card h1 {margin-top: 0;}
-
-        .btn-services-select {margin-bottom: 0;}
-    }
-
-    @media (max-width: 750px) {
-        .flex-container {
-            flex-direction: column;
-        }
-
-        .flex-container > .intro-container {
-            margin-right: 0;
-            margin-left: 0;
-        }
-
-        .services-card {
-            width: 90%;
-            margin: 1rem auto;
-        }
-    }
-
-/*  === CONTACT HTML === */
-
-    #contact-form {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 4rem;
-
-    }
-
-    #contact-form input,
-    #contact-form textarea {
-        width: 100%;
-        border: 2px solid #083204;
-        border-radius: 4px;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        color: #083204;
-    }
-
-    #contact-form input:hover,
-    #contact-form textarea:hover,
-    #contact-form input:focus,
-    #contact-form textarea:focus {
-        background-color: #DAF4D8;
-        color: #083204;
-    }
-
-    #contact-form textarea {
-        height: 150px;
-    }
-
-    #contact-submit-btn {
-        width: 150px;
-        height: 40px;
-    }
-
-    #contact-submit-btn:hover {
-        color: #083204;
-        border: 2px solid #083204;
-    }
-
-    @media (max-width: 1366px) {
-        #contact-form {
-            width: 90%;
-        }
-    }
-
-    @media (max-width: 768px) {
-        #contact-submit-btn {
-            width: 100%;
-        }
-    }
-
-/*  === IMPRINT === */
-
-    #imprint {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #imprint .row:first-of-type {
-        border-bottom: 4px solid #2C6626;
-    }
-
-    #imprint a {
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    @media (max-width: 768px) {
-        #imprint {
-            width: 100%;
-            margin-left: 0;
-            margin-right: 0;
-        }
     }
 
 /*  === GRID-SYSTEM === */
