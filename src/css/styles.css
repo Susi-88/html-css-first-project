@@ -27,7 +27,8 @@ Third color - LIGHT GRAY:    #E5E5E5
     }
 
     :focus {
-        outline: 3px solid #3D3F45;
+        outline: 2px solid #083204;
+        box-shadow: 0 0 20px 0 #DAF4D8, 0 0 30px 0 #083204;
     }
 
     main > section:nth-of-type(even) {
@@ -94,7 +95,8 @@ Third color - LIGHT GRAY:    #E5E5E5
     .btn-primer:hover {
         background-color: #DAF4D8;
         border: 2px solid #DAF4D8;
-        color: #083204;
+        color: hsl(115, 85%, 11%);
+        transition: border .5s ease-in-out, color .5s ease-in-out, background-color .5s ease-in-out;
     }
 
     .btn-secunder {
@@ -105,12 +107,13 @@ Third color - LIGHT GRAY:    #E5E5E5
         padding: .6rem 1.2rem;
         display: inline-block;
         cursor: pointer;
+        font-weight: bold;
     }
 
     .btn-secunder:hover {
         color: #083204;
         border: 2px solid #083204;
-        font-weight: bold;
+        transition: border .3s ease-in-out, color .3s ease-in-out;
     }
 
     .intro-container {
@@ -418,6 +421,11 @@ Third color - LIGHT GRAY:    #E5E5E5
         margin-left: auto;
         margin-right: auto;
         border-radius: 50%;
+        transition: transform 1s;
+    }
+
+    .offers-icon:hover {
+        transform: rotateZ(360deg);
     }
 
     #prices-icon{
@@ -639,12 +647,11 @@ Third color - LIGHT GRAY:    #E5E5E5
         padding: .5rem 1rem;
         font-size: 1rem;
         color: #083204;
+        transition: background-color .5s ease-in-out, color .5s ease-in-out;
     }
 
     #contact-form input:hover,
-    #contact-form textarea:hover,
-    #contact-form input:focus,
-    #contact-form textarea:focus {
+    #contact-form textarea:hover {
         background-color: #DAF4D8;
         color: #083204;
     }
