@@ -1,17 +1,22 @@
-/*  === COLORS === */
-
-/* 
-Primer color - GREEN:   #2C6626
-
-    dark green:      #083204
-    light green:     #DAF4D8
-
-Secunder color - GRAY:       #3D3F45
-Third color - LIGHT GRAY:    #E5E5E5
-*/
-
-
 /*  === GLOBAL === */
+
+    :root {
+        /*  === COLORS === */
+        --primer-green: #2C6626;
+        --dark-green: #083204;
+        --light-green: #DAF4D8;
+        
+        --dark: #222222;
+        --light: #fbfbfb;
+
+        /*  === FONTS === */
+        --primer-font: Arial;
+        --secunder-font: Helvetica;
+        --fallback-font: sans-serif;
+
+        /*  === OTHER === */
+        --border-style: 2px solid;
+    }
 
     html {
         font-size: 16px;
@@ -19,7 +24,8 @@ Third color - LIGHT GRAY:    #E5E5E5
 
     body {
         margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: var(--primer-font, --secunder-font, --fallback-font);
+        color: var(--dark);
     }
 
     * {
@@ -27,12 +33,12 @@ Third color - LIGHT GRAY:    #E5E5E5
     }
 
     :focus {
-        outline: 2px solid #083204;
-        box-shadow: 0 0 20px 0 #DAF4D8, 0 0 30px 0 #083204;
+        outline: var(--border-style) var(--dark-green);
+        box-shadow: 0 0 20px 0 var(--light-green), 0 0 30px 0 var(--dark-green);
     }
 
     main > section:nth-of-type(even) {
-        background-color: #DAF4D8;
+        background-color: var(--light-green);
     }
 
     section {
@@ -71,7 +77,7 @@ Third color - LIGHT GRAY:    #E5E5E5
     }
 
     .active {
-        background-color: #083204 !important;
+        background-color: var(--dark-green) !important;
     }
 
     .important-text {
@@ -83,27 +89,27 @@ Third color - LIGHT GRAY:    #E5E5E5
     }
 
     .btn-primer {
-        background-color: #083204;
-        border: 2px solid #083204; 
+        background-color: var(--dark-green);
+        border: var(--border-style) var(--dark-green); 
         border-radius: 4px;
-        color: #FFF;
+        color: var(--light);
         font-size: .9rem;
         padding: .6rem 1.2rem;
         cursor: pointer;
     }
 
     .btn-primer:hover {
-        background-color: #DAF4D8;
-        border: 2px solid #DAF4D8;
+        background-color: var(--light-green);
+        border: var(--border-style) var(--light-green);
         color: hsl(115, 85%, 11%);
         transition: border .5s ease-in-out, color .5s ease-in-out, background-color .5s ease-in-out;
     }
 
     .btn-secunder {
         background-color: transparent;
-        border: 2px solid #FFF;
+        border: var(--border-style) var(--light);
         border-radius: 4px;
-        color: #FFF;
+        color: var(--light);
         padding: .6rem 1.2rem;
         display: inline-block;
         cursor: pointer;
@@ -111,8 +117,8 @@ Third color - LIGHT GRAY:    #E5E5E5
     }
 
     .btn-secunder:hover {
-        color: #083204;
-        border: 2px solid #083204;
+        color: var(--dark-green);
+        border: var(--border-style) var(--dark-green);
         transition: border .3s ease-in-out, color .3s ease-in-out;
     }
 
@@ -149,7 +155,7 @@ Third color - LIGHT GRAY:    #E5E5E5
     #header-nav {
         width: 100%;
         height: 50px;
-        background-color: #2C6626;
+        background-color: var(--primer-green);
         font-weight: bold;
         font-size: 1.2rem;
     }
@@ -179,22 +185,22 @@ Third color - LIGHT GRAY:    #E5E5E5
     }
 
     #header-nav ul > li > a {
-        color: #FFF;
+        color: var(--light);
         text-decoration: none;
     }
 
     #header-nav ul > li > a:link {
-        color: #FFF;
+        color: var(--light);
         text-decoration: none;
     }
 
     #header-nav ul > li > a:visited {
-        color: #FFF;
+        color: var(--light);
         text-decoration: none;
     }
 
     #header-nav ul > li > a:hover {
-        color: #083204;
+        color: var(--dark-green);
     }
 
 
@@ -219,8 +225,8 @@ Third color - LIGHT GRAY:    #E5E5E5
 /*  === NEWSLETTER SECTION === */
 
     #newsletter-section {
-        background-color: #2C6626;
-        color: #FFF;
+        background-color: var(--primer-green);
+        color: var(--light);
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -240,7 +246,7 @@ Third color - LIGHT GRAY:    #E5E5E5
         width: 70%;
         padding: .6rem;
         margin: 1.2rem .2rem 1.2rem 0;
-        border: 2px solid #FFF;
+        border: var(--border-style) var(--light);
         border-radius: 4px;
     }
 
@@ -321,8 +327,8 @@ Third color - LIGHT GRAY:    #E5E5E5
 /*  === SERVICES === */
 
     .services-box {
-        background-color: #2C6626;
-        color: #FFF;
+        background-color: var(--primer-green);
+        color: var(--light);
         text-align: center;
         padding: 1rem 3rem 2.5rem;
         width: 75%;
@@ -388,7 +394,7 @@ Third color - LIGHT GRAY:    #E5E5E5
 
 /*  === OFFERS === */
     #offers-section {
-        background-color: #DAF4D8;
+        background-color: var(--light-green);
     }
 
     .offers-box {
@@ -429,15 +435,15 @@ Third color - LIGHT GRAY:    #E5E5E5
     }
 
     #prices-icon{
-        background: #2C6626 url(../img/offers-sprite.png) left 0 top 0;
+        background: var(--primer-green) url(../img/offers-sprite.png) left 0 top 0;
     }
 
     #delivery-icon {
-        background: #2C6626 url(../img/offers-sprite.png) left -120px top 0;
+        background: var(--primer-green) url(../img/offers-sprite.png) left -120px top 0;
     }
 
     #designe-icon {
-        background: #2C6626 url(../img/offers-sprite.png) left -240px top 0;
+        background: var(--primer-green) url(../img/offers-sprite.png) left -240px top 0;
     }
 
     @media (max-width: 768px) {
@@ -491,30 +497,30 @@ Third color - LIGHT GRAY:    #E5E5E5
 
     #footer-text div:first-of-type > p:first-of-type {
         font-weight: bold;
-        color: #083204;
+        color: var(--dark-green);
     }
 
     #footer-text a:link {
         text-decoration: none;
-        color: black;
+        color: var(--dark);
         font-weight: bold;
     }
 
     #footer-text a:visited {
         text-decoration: none;
-        color: black;
+        color: var(--dark);
         font-weight: bold;
     }
 
     #footer-text a:active {
         text-decoration: none;
-        color: black;
+        color: var(--dark);
         font-weight: bold;
     }
 
     #footer-text a:hover {
         text-decoration: underline;
-        color: #083204;
+        color: var(--dark-green);
         font-weight: bold;
     }
 
@@ -535,7 +541,7 @@ Third color - LIGHT GRAY:    #E5E5E5
     }
 
     .services-card {
-        background-color: #2C6626;
+        background-color: var(--primer-green);
         color: white;
         flex-basis: 30%;
         padding: 2rem;
@@ -568,7 +574,7 @@ Third color - LIGHT GRAY:    #E5E5E5
     .services-card-highlighted {
         flex-basis: 33%;
         min-height: 650px;
-        box-shadow: 0 0 20px 0 #083204;
+        box-shadow: 0 0 20px 0 var(--dark-green);
     }
 
     .btn-services-select {
@@ -642,18 +648,18 @@ Third color - LIGHT GRAY:    #E5E5E5
     #contact-form input,
     #contact-form textarea {
         width: 100%;
-        border: 2px solid #083204;
+        border: var(--border-style) var(--dark-green);
         border-radius: 4px;
         padding: .5rem 1rem;
         font-size: 1rem;
-        color: #083204;
+        color: var(--dark-green);
         transition: background-color .5s ease-in-out, color .5s ease-in-out;
     }
 
     #contact-form input:hover,
     #contact-form textarea:hover {
-        background-color: #DAF4D8;
-        color: #083204;
+        background-color: var(--light-green);
+        color: var(--dark-green);
     }
 
     #contact-form textarea {
@@ -666,8 +672,8 @@ Third color - LIGHT GRAY:    #E5E5E5
     }
 
     #contact-submit-btn:hover {
-        color: #083204;
-        border: 2px solid #083204;
+        color: var(--dark-green);
+        border: var(--border-style) var(--dark-green);
     }
 
     @media (max-width: 1366px) {
@@ -691,11 +697,11 @@ Third color - LIGHT GRAY:    #E5E5E5
     }
     
     #imprint .row:first-of-type {
-        border-bottom: 4px solid #2C6626;
+        border-bottom: 4px solid var(--primer-green);
     }
 
     #imprint a {
-        color: black;
+        color: var(--dark);
         text-decoration: none;
         font-weight: bold;
     }
