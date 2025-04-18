@@ -21,16 +21,34 @@
     <body>
         <!-- NAVIGATION BAR -->
         <nav id="header-nav">
-            <div class="container">
+            <div class="container" id="desktop-nav">
                 <div class="row">
-                    <div class="col-6">
-                        <a href="index.html"><img src="../src/img/ECOTECH_logo_text-white.png" alt="logo from ECOTECH"></a>
+                    <div class="col-6"><a href="../index.html" class="logo-link"><img src="../src/img/ECOTECH_logo_text-white.png"
+                                alt="Logo from ECOTECH"></a>
                         <ul>
                             <li><a href="../index.html">Home</a></li>
                             <li><a href="./services.html">Services</a></li>
                             <li><a href="./contact.html">Contact</a></li>
                             <li class="active"><a href="./imprint.html">Imprint</a></li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="mobile-nav">
+                <div class="row">
+                    <div class="col-6"><a href="../index.html" class="logo-link"><img src="../src/img/ECOTECH_logo_text-white.png"
+                                alt="Logo from ECOTECH"></a>
+                        <div class="clearfix" id="mobile-nav-dropdown">
+                            <div id="mobile-nav-button"><span>&equiv;</span></div>
+                            <div class="clearfix" id="mobile-nav-content">
+                                <ul>
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="./services.html">Services</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li class="active"><a href="./imprint.html">Imprint</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
