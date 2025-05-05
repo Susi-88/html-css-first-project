@@ -416,9 +416,14 @@
         background-color: var(--primer-green);
         color: var(--light);
         text-align: center;
-        padding: 1rem 3rem 2.5rem;
+        padding: 2.5rem 3rem;
         width: 75%;
         margin-bottom: 1.8rem;
+        border-radius: 5px;
+    }
+
+    .services-box:hover {
+        box-shadow: 0 0 20px 0 var(--dark-green);
     }
 
     #services-section .row > .col-3:nth-of-type(even) > .services-box {
@@ -429,6 +434,13 @@
     #services-section .row > .col-3:nth-of-type(odd) > .services-box {
         margin-right: 1rem;
         margin-left: auto;
+    }
+
+    .services-box img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
     }
 
     .services-box h2 {
@@ -518,6 +530,7 @@
 
     .offers-icon:hover {
         transform: rotateZ(360deg);
+        box-shadow: 0 0 20px 0 var(--dark-green);
     }
 
     #prices-icon{
