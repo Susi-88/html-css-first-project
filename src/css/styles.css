@@ -436,6 +436,7 @@
 
     #animated-logo-container {
         width: 80%;
+        height: 10vh;
         margin-right: auto;
         margin-left: auto;
         margin-top: 5rem;
@@ -444,18 +445,16 @@
     }
  
     #animated-logo {
-         height: 150px;
-         width: 150px;
-         /* margin-left: auto;
-         margin-right: auto; */
-         animation: logoAnimation 5s ease-in-out infinite alternate;
+        height: 10vh;
+        max-height: 150px;
+        width: auto;
+        animation: logoAnimation 5s ease-in-out infinite alternate;
     }
 
     #animated-logo-text {
-        height: 150px;
+        height: 10vh;
+        max-height: 150px;
         width: auto;
-        /* margin-left: auto;
-        margin-right: auto; */
     }
 
         @keyframes logoAnimation {
@@ -475,6 +474,12 @@
             100%         {transform: rotateZ(360deg);}
  
         }
+
+    @media (max-width: 480px) {
+        #animated-logo-container {
+            display: none;
+        }
+    }
 
 /*  === SERVICES === */
 
