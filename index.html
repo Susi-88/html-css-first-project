@@ -19,193 +19,198 @@
     </head>
 
     <body>
-        <!-- NAVIGATION BAR -->
-        <nav id="header-nav">
-            <div class="container" id="desktop-nav">
-                <div class="row">
-                    <div class="col-6"><a href="index.html" class="logo-link"><img src="./src/img/ECOTECH_logo_text-white.png"
-                                alt="Logo from ECOTECH"></a>
-                        <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="./html/services.html">Services</a></li>
-                            <li><a href="./html/contact.html">Contact</a></li>
-                            <li><a href="./html/imprint.html">Imprint</a></li>
-                        </ul>
+        <!-- HEADER -->
+        <header>
+           <!-- NAVIGATION BAR -->
+            <nav id="header-nav">
+                <div class="container" id="desktop-nav">
+                    <div class="row">
+                        <div class="col-6"><a href="index.html" class="logo-link"><img src="./src/img/ECOTECH_logo_text-white.png"
+                                    alt="Logo from ECOTECH"></a>
+                            <ul>
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="./html/services.html">Services</a></li>
+                                <li><a href="./html/contact.html">Contact</a></li>
+                                <li><a href="./html/imprint.html">Imprint</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container" id="mobile-nav">
-                <div class="row">
-                    <div class="col-6"><a href="index.html" class="logo-link"><img src="./src/img/ECOTECH_logo_text-white.png"
-                                alt="Logo from ECOTECH"></a>
-                        <div class="clearfix" id="mobile-nav-dropdown">
-                            <div id="mobile-nav-button"><span>&equiv;</span></div>
-                            <div class="clearfix" id="mobile-nav-content">
-                                <ul>
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="./html/services.html">Services</a></li>
-                                    <li><a href="./html/contact.html">Contact</a></li>
-                                    <li><a href="./html/imprint.html">Imprint</a></li>
-                                </ul>
+                <div class="container" id="mobile-nav">
+                    <div class="row">
+                        <div class="col-6"><a href="index.html" class="logo-link"><img src="./src/img/ECOTECH_logo_text-white.png"
+                                    alt="Logo from ECOTECH"></a>
+                            <div class="clearfix" id="mobile-nav-dropdown">
+                                <div id="mobile-nav-button"><span>&equiv;</span></div>
+                                <div class="clearfix" id="mobile-nav-content">
+                                    <ul>
+                                        <li class="active"><a href="index.html">Home</a></li>
+                                        <li><a href="./html/services.html">Services</a></li>
+                                        <li><a href="./html/contact.html">Contact</a></li>
+                                        <li><a href="./html/imprint.html">Imprint</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        <!-- HEADER-BANNER -->
-        <header id="header-banner"></header>
+            <!-- HEADER-BANNER -->
+            <div id="header-banner"></div>
 
-        <!-- NEWSLETTER SECTION -->
-        <section id="newsletter-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <p id="newsletter-text">
-                            <span class="important-text">Sign up for our newsletter now and stay updated on everything!</span>  
-                            We only send you interesting and relevant information to keep you in the loop.
-                        </p>
+            <!-- NEWSLETTER SECTION -->
+            <section id="newsletter-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p id="newsletter-text">
+                                <span class="important-text">Sign up for our newsletter now and stay updated on everything!</span>  
+                                We only send you interesting and relevant information to keep you in the loop.
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <form id="newsletter-form" action="index.html" method="post">
+                                <label class="screenreader" for="newsletter-form-email">E-mail:</label>
+                                <input id="newsletter-form-email" type="text" name="email" placeholder="Enter your email address" pattern="(?:[a-z0-9!#$%&'*+=?^_`\{\|\}~\-]+(?:\.[a-z0-9!#$%&'*+=?^_`\{\|\}~\-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9\-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Please enter a valid email address">
+                                
+                                <button id="newsletter-form-btn" class="btn-primer" type="submit">Subscribe</button>
+                            </form>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <form id="newsletter-form" action="index.html" method="post">
-                            <label class="screenreader" for="newsletter-form-email">E-mail:</label>
-                            <input id="newsletter-form-email" type="text" name="email" placeholder="Enter your email address" pattern="(?:[a-z0-9!#$%&'*+=?^_`\{\|\}~\-]+(?:\.[a-z0-9!#$%&'*+=?^_`\{\|\}~\-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9\-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Please enter a valid email address">
+                </div>
+            </section> 
+        </header>  
+
+        <!-- MAIN -->
+        <main>
+            <!-- LOGO -->
+            <div id="animated-logo">
+                <img src="./src/img/ECOTECH_logo_img.png" alt="ECOTECH logo">
+            </div>
+
+            <!-- SERVICES SECTION -->
+            <section id="services-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <header class="intro-container">
+                                <h1>Our services</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque rerum cupiditate commodi accusamus incidunt dolorum praesentium totam adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat sunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error cupiditate reiciendis ipsa odit. Adipisci iure ab quibusdam quia, itaque quisquam magnam porro aliquam. Dolores praesentium hic assumenda ratione blanditiis sit.</p>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <article class="services-box">
+                                <img src="./src/img/services/ecotech-service-1.jpg" alt="">
+                                <h2>Service #1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat.</p>
+                                <a class="btn-secunder service-see-more-btn" href="./html/services.html#service1">See more</a>
+                            </article>
                             
-                            <button id="newsletter-form-btn" class="btn-primer" type="submit">Subscribe</button>
-                        </form>
+                        </div>
+                        <div class="col-3">
+                            <article class="services-box">
+                                <img src="./src/img/services/ecotech-service-2.jpg" alt="">
+                                <h2>Service #2</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat.</p>
+                                <a class="btn-secunder service-see-more-btn" href="./html/services.html#service2">See more</a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <article class="services-box">
+                                <img src="./src/img/services/ecotech-service-3.jpg" alt="">
+                                <h2>Service #3</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat.</p>
+                                <a class="btn-secunder service-see-more-btn" href="./html/services.html#service3">See more</a>
+                            </article>
+                        </div>
+                        <div class="col-3">
+                            <article class="services-box">
+                                <img src="./src/img/services/ecotech-service-4.jpg" alt="">
+                                <h2>Service #4</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat.</p>
+                                <a class="btn-secunder service-see-more-btn" href="./html/services.html#service4">See more</a>
+                            </article>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- LOGO -->
- 
-         <div id="animated-logo">
-             <img src="./src/img/ECOTECH_logo_img.png" alt="ECOTECH logo">
-         </div>
+            <!-- OFFERS SECTION -->
+            <section id="offers-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <header class="intro-container">
+                                <h1>Our offers</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque rerum cupiditate commodi accusamus incidunt dolorum praesentium totam adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat sunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error cupiditate reiciendis ipsa odit. Adipisci iure ab quibusdam quia, itaque quisquam magnam porro aliquam. Dolores praesentium hic assumenda ratione blanditiis sit.</p>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <article class="offers-box">
+                                <div id="prices-icon" class="offers-icon"></div>
+                                <h1>Attractive prices</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque rerum cupiditate commodi accusamus incidunt dolorum praesentium totam adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat sunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </article>
+                        </div>
+                        <div class="col-2">
+                            <article class="offers-box">
+                                <div id="delivery-icon" class="offers-icon"></div>
+                                <h1>Fast delivery</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque rerum cupiditate commodi accusamus incidunt dolorum praesentium totam adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat sunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </article>
+                        </div>
+                        <div class="col-2">
+                            <article class="offers-box">
+                                <div id="designe-icon" class="offers-icon"></div>
+                                <h1>Modernes designe</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque rerum cupiditate commodi accusamus incidunt dolorum praesentium totam adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat sunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <!-- SERVICES SECTION -->
-        <section id="services-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <header class="intro-container">
-                            <h1>Our services</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque rerum cupiditate commodi accusamus incidunt dolorum praesentium totam adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat sunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error cupiditate reiciendis ipsa odit. Adipisci iure ab quibusdam quia, itaque quisquam magnam porro aliquam. Dolores praesentium hic assumenda ratione blanditiis sit.</p>
-                        </header>
+            <!-- ABOUT US SECTION -->
+            <section id="about-us-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <header class="intro-container">
+                                <h1>About us</h1>
+                            </header>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <article class="services-box">
-                            <img src="./src/img/services/ecotech-service-1.jpg" alt="">
-                            <h2>Service #1</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat.</p>
-                            <a class="btn-secunder service-see-more-btn" href="./html/services.html#service1">See more</a>
-                        </article>
-                        
-                    </div>
-                    <div class="col-3">
-                        <article class="services-box">
-                            <img src="./src/img/services/ecotech-service-2.jpg" alt="">
-                            <h2>Service #2</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat.</p>
-                            <a class="btn-secunder service-see-more-btn" href="./html/services.html#service2">See more</a>
-                        </article>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <article class="services-box">
-                            <img src="./src/img/services/ecotech-service-3.jpg" alt="">
-                            <h2>Service #3</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat.</p>
-                            <a class="btn-secunder service-see-more-btn" href="./html/services.html#service3">See more</a>
-                        </article>
-                    </div>
-                    <div class="col-3">
-                        <article class="services-box">
-                            <img src="./src/img/services/ecotech-service-4.jpg" alt="">
-                            <h2>Service #4</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat.</p>
-                            <a class="btn-secunder service-see-more-btn" href="./html/services.html#service4">See more</a>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <div class="row">
+                        <div class="col-4">
+                            <p>
+                                Donec eleifend malesuada scelerisque. Nullam urna lacus, eleifend mollis orci non, cursus dapibus dui. Aliquam cursus vulputate cursus. Mauris volutpat ex quis nulla dapibus, sed hendrerit tortor lobortis. Nunc eleifend eros quis magna pharetra porta. Praesent in tempus massa. Aliquam bibendum dapibus dignissim. Donec quis ultrices metus. Fusce elementum, ante non elementum cursus, erat justo tempor mi, eget sollicitudin nisi eros sit amet purus. Nunc interdum vitae odio a eleifend.Duis vel convallis libero. Proin sed tincidunt ex. Nunc sed dignissim nisi. Sed congue feugiat sodales.
 
-        <!-- OFFERS SECTION -->
-        <section id="offers-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <header class="intro-container">
-                            <h1>Our offers</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque rerum cupiditate commodi accusamus incidunt dolorum praesentium totam adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat sunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error cupiditate reiciendis ipsa odit. Adipisci iure ab quibusdam quia, itaque quisquam magnam porro aliquam. Dolores praesentium hic assumenda ratione blanditiis sit.</p>
-                        </header>
+                            </p>
+                            <p>
+                                Etiam aliquam nisl nulla, et laoreet justo eleifend id. Ut at velit nec augue rhoncus dignissim vehicula vitae dui. Quisque eget tellus sed turpis hendrerit imperdiet. Ut eu imperdiet purus. Quisque imperdiet aliquet ligula, eget faucibus est facilisis eu. Cras nec rhoncus justo, ac iaculis ligula. Nullam ac eros arcu. Duis bibendum hendrerit leo vel mattis. Curabitur vestibulum tempus massa, eu gravida mauris molestie in. Vestibulum et nisi a elit iaculis dapibus. Vestibulum luctus ultricies pulvinar.Duis vel convallis libero. Proin sed tincidunt ex. Nunc sed dignissim nisi. Sed congue feugiat sodales.
+                            </p>
+                            <p>
+                                Cras quis fermentum neque, eu cursus ante. Nunc rhoncus lacinia est at ornare. Integer a blandit lectus. Suspendisse mi elit, feugiat sit amet consectetur bibendum, semper ac leo. Maecenas quam nibh, aliquam nec molestie quis, mattis at augue. Fusce enim nisl, fermentum a neque nec, finibus ornare purus. Duis vel convallis libero. Proin sed tincidunt ex. Nunc sed dignissim nisi. Sed congue feugiat sodales.
+                            </p>
+                            <p>
+                                Etiam aliquam nisl nulla, et laoreet justo eleifend id. Ut at velit nec augue rhoncus dignissim vehicula vitae dui. Quisque eget tellus sed turpis hendrerit imperdiet. Ut eu imperdiet purus. Quisque imperdiet aliquet ligula, eget faucibus est facilisis eu. Cras nec rhoncus justo, ac iaculis ligula. Nullam ac eros arcu. Duis bibendum hendrerit leo vel mattis. Curabitur vestibulum tempus massa, eu gravida mauris molestie in. Vestibulum et nisi a elit iaculis dapibus. Vestibulum luctus ultricies pulvinar.
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <img id="about-us-logo-vertical" src="./src/img/ECOTECH_logo_vertical.png" alt="vertical logo">
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-2">
-                        <article class="offers-box">
-                            <div id="prices-icon" class="offers-icon"></div>
-                            <h1>Attractive prices</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque rerum cupiditate commodi accusamus incidunt dolorum praesentium totam adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat sunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        </article>
-                    </div>
-                    <div class="col-2">
-                        <article class="offers-box">
-                            <div id="delivery-icon" class="offers-icon"></div>
-                            <h1>Fast delivery</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque rerum cupiditate commodi accusamus incidunt dolorum praesentium totam adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat sunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        </article>
-                    </div>
-                    <div class="col-2">
-                        <article class="offers-box">
-                            <div id="designe-icon" class="offers-icon"></div>
-                            <h1>Modernes designe</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque rerum cupiditate commodi accusamus incidunt dolorum praesentium totam adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat sunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT US SECTION -->
-        <section id="about-us-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <header class="intro-container">
-                            <h1>About us</h1>
-                        </header>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <p>
-                            Donec eleifend malesuada scelerisque. Nullam urna lacus, eleifend mollis orci non, cursus dapibus dui. Aliquam cursus vulputate cursus. Mauris volutpat ex quis nulla dapibus, sed hendrerit tortor lobortis. Nunc eleifend eros quis magna pharetra porta. Praesent in tempus massa. Aliquam bibendum dapibus dignissim. Donec quis ultrices metus. Fusce elementum, ante non elementum cursus, erat justo tempor mi, eget sollicitudin nisi eros sit amet purus. Nunc interdum vitae odio a eleifend.Duis vel convallis libero. Proin sed tincidunt ex. Nunc sed dignissim nisi. Sed congue feugiat sodales.
-
-                        </p>
-                        <p>
-                            Etiam aliquam nisl nulla, et laoreet justo eleifend id. Ut at velit nec augue rhoncus dignissim vehicula vitae dui. Quisque eget tellus sed turpis hendrerit imperdiet. Ut eu imperdiet purus. Quisque imperdiet aliquet ligula, eget faucibus est facilisis eu. Cras nec rhoncus justo, ac iaculis ligula. Nullam ac eros arcu. Duis bibendum hendrerit leo vel mattis. Curabitur vestibulum tempus massa, eu gravida mauris molestie in. Vestibulum et nisi a elit iaculis dapibus. Vestibulum luctus ultricies pulvinar.Duis vel convallis libero. Proin sed tincidunt ex. Nunc sed dignissim nisi. Sed congue feugiat sodales.
-                        </p>
-                        <p>
-                            Cras quis fermentum neque, eu cursus ante. Nunc rhoncus lacinia est at ornare. Integer a blandit lectus. Suspendisse mi elit, feugiat sit amet consectetur bibendum, semper ac leo. Maecenas quam nibh, aliquam nec molestie quis, mattis at augue. Fusce enim nisl, fermentum a neque nec, finibus ornare purus. Duis vel convallis libero. Proin sed tincidunt ex. Nunc sed dignissim nisi. Sed congue feugiat sodales.
-                        </p>
-                        <p>
-                            Etiam aliquam nisl nulla, et laoreet justo eleifend id. Ut at velit nec augue rhoncus dignissim vehicula vitae dui. Quisque eget tellus sed turpis hendrerit imperdiet. Ut eu imperdiet purus. Quisque imperdiet aliquet ligula, eget faucibus est facilisis eu. Cras nec rhoncus justo, ac iaculis ligula. Nullam ac eros arcu. Duis bibendum hendrerit leo vel mattis. Curabitur vestibulum tempus massa, eu gravida mauris molestie in. Vestibulum et nisi a elit iaculis dapibus. Vestibulum luctus ultricies pulvinar.
-                        </p>
-                    </div>
-                    <div class="col-2">
-                        <img id="about-us-logo-vertical" src="./src/img/ECOTECH_logo_vertical.png" alt="vertical logo">
-                    </div>
-                </div>
-            </div>
-        </section>
-
+            </section>
+        </main>
+        
         <!-- FOOTER -->
         <footer id="footer">
             <img id="footer-img" src="./src/img/ECOTECH_footer.png">
