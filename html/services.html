@@ -99,6 +99,40 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque rerum cupiditate commodi accusamus incidunt dolorum praesentium totam adipisci eligendi facilis tempore sapiente ex, odit molestias quam reprehenderit asperiores fugiat sunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </header>
                 </div>
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="../src/img/services/slideshow/img-1.jpg" style="width:100%">
+                        <div class="text">Lorem ipsum dolor sit amet consectetur</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="../src/img/services/slideshow/img-2.jpg" style="width:100%">
+                        <div class="text">Neque rerum cupiditate commodi</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="../src/img/services/slideshow/img-3.jpg" style="width:100%">
+                        <div class="text">Molestias quam reprehenderit </div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </section>
 
             <section id="service1" class="services">
@@ -398,7 +432,7 @@
             </div>
         </footer>
         
-        <script src="./src/js/script.js"></script>
+        <script src="../src/js/script.js"></script>
         <script defer>document.addEventListener("touchstart", function(){}, true);</script>
     </body>
 
