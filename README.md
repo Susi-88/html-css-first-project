@@ -19,6 +19,9 @@ I wanted to create a practical project to directly apply and enhance the knowled
 - **CSS:** Used for styling and layout of the website.
 - **JavaScript:** Used minimally for interactive elements.
 
+## Preview
+https://www.w3profile.com/zsuzsanna-benkoe -> Spaces (https://html-css-first-project.w3spaces.com/)
+
 ## Color Palette
 The primary colors of the project are:
 - **Primary Color (Green):** `#2C6626`
@@ -49,6 +52,9 @@ Ich wollte ein praktisches Projekt erstellen, um mein Wissen aus dem Kurs direkt
 - **HTML:** Verwendet für die Struktur der Website.
 - **CSS:** Verwendet für das Styling und Layout der Website.
 - **JavaScript:** Minimal verwendet für interaktive Elemente.
+
+## Vorschau
+https://www.w3profile.com/zsuzsanna-benkoe -> Spaces (https://html-css-first-project.w3spaces.com/)
 
 ## Farbpalette
 Die Hauptfarben des Projekts sind:
