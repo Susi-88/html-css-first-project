@@ -620,6 +620,11 @@
         text-align: justify;
     }
 
+    #about-us-row {
+        display: flex;
+        align-items: center;
+    }
+
     #about-us-logo-vertical {
         display: block;
         height: 500px;
@@ -627,6 +632,16 @@
         margin-right: auto;
     }
 
+        @media (max-width: 768px) {
+            #about-us-img-col {
+                display: none;
+            }
+
+            #about-us-text-col {
+                width: 100%;
+            }
+        }
+  
 /*  === FOOTER === */
     
     #footer-img {
